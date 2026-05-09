@@ -2,7 +2,8 @@ fastapi==0.104.1
 uvicorn==0.24.0
 requests==2.31.0
 beautifulsoup4==4.12.2
-yfinance==0.2.33
-pandas==2.0.3
+yfinance>=0.2.33
+pandas>=2.2.0
 apscheduler==3.10.4
 python-dotenv==1.0.0
+setuptools>=65.0.0
