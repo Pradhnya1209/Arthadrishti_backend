@@ -2,7 +2,8 @@ import sqlite3
 import os
 from datetime import datetime
 
-DB_PATH = os.path.join(os.path.dirname(__file__), 'arthadrishti.db')
+_default_db = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'arthadrishti.db')
+DB_PATH = os.environ.get('DATABASE_PATH', _default_db)
 
 def get_connection():
     conn = sqlite3.connect(DB_PATH)
